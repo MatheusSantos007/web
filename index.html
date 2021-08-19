@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="matheus">
+<title>Calculadora</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+  function somar(){
+   var valor1 = document.getElementById("s1").value;
+   var valor2 = document.getElementById("s2").value;
+   var resultado = parseInt(valor1) + parseInt(valor2);
+   alert(resultado);
+    }
+function multiplicar(){
+  var valor1 = document.getElementById("s1").value;
+   var valor2 = document.getElementById("s2").value;
+   var resultado = parseInt(valor1) * parseInt(valor2);
+   alert(resultado);
+}   
+function dividir(){
+   var valor1 = document.getElementById("s1").value;
+   var valor2 = document.getElementById("s2").value;
+   var resultado = parseInt(valor1) / parseInt(valor2);
+   alert(resultado);
+}   
+function subtrair(){
+   var valor1 = document.getElementById("s1").value;
+   var valor2 = document.getElementById("s2").value;
+   var resultado = parseInt(valor1) - parseInt(valor2);
+   alert(resultado);
+}   
+</script>
+</head>
+<body>
+  <header>
+  </header>
+  <nav>
+  </nav>
+  <main>
+    <form>
+      <table allign="center" bgcolor="#fific1">
+        <tr>
+          <th colspan="5">Calculadora 2.0</th>
+        </tr>
+        <tr>
+          <td> valor1<input type="text"name="valor1"id="s1"</td>
+          <td> valor2<input type="text"name="valor2"id="s2"</td>
+          <td><button onclick="somar()">+</button></td>
+          <td><button onclick="multiplicar()">*</button></td>
+          <td><button onclick="dividir()">/</button></td>
+          <td><button onclick="subtrair()">-</button></td>
+        </tr>
+      </table>
+      
+    </form>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
